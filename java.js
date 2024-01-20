@@ -9,33 +9,33 @@ gsap.to(".box1", {
 
 })
 
-gsap.to(".box2", {
-    scrollTrigger: {
-        trigger: ".box2",
-        toggleActions: "restart pause resume reset",
-        start: "-60 center",
-        end: "top center",
-        scrub: 4
-    },
-    x: 0,
-    duration: 2, 
-    rotation: 0
+// gsap.to(".box2", {
+//     scrollTrigger: {
+//         trigger: ".box2",
+//         toggleActions: "restart pause resume reset",
+//         start: "-60 center",
+//         end: "top center",
+//         scrub: 4
+//     },
+//     x: 0,
+//     duration: 2, 
+//     rotation: 0
 
-})
+// })
 
-gsap.to(".box3", {
-    scrollTrigger: {
-        trigger: ".box3",
-        toggleActions: "restart pause resume reset",
-        start: "-60 center",
-        end: "top center",
-        scrub: 4
-    },
-    x: 0,
-    duration: 2, 
-    rotation: 0
+// gsap.to(".box3", {
+//     scrollTrigger: {
+//         trigger: ".box3",
+//         toggleActions: "restart pause resume reset",
+//         start: "-60 center",
+//         end: "top center",
+//         scrub: 4
+//     },
+//     x: 0,
+//     duration: 2, 
+//     rotation: 0
 
-})
+// })
 
 gsap.to(".pygame", {
     scrollTrigger: {
@@ -48,4 +48,15 @@ gsap.to(".pygame", {
 
 })
 
+gsap.to(".lecke1", {
+    scrollTrigger: {
+        trigger: ".pygame",
+        toggleActions: "restart pause resume reset"
+    },
+    x: 0,
+    y: 0,
+    duration: 2, 
+    rotation: 0,
+    delay: 2
 
+})
