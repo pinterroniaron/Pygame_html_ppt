@@ -13,7 +13,7 @@ gsap.to(".box2", {
     scrollTrigger: {
         trigger: ".box2",
         toggleActions: "restart pause resume reset",
-        start: "-40 center",
+        start: "-60 center",
         end: "top center",
         scrub: 4
     },
@@ -27,7 +27,7 @@ gsap.to(".box3", {
     scrollTrigger: {
         trigger: ".box3",
         toggleActions: "restart pause resume reset",
-        start: "-40 center",
+        start: "-60 center",
         end: "top center",
         scrub: 4
     },
