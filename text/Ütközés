@@ -1,0 +1,6 @@
+Hogyan működik az ütközéskezelés a Pygame-ben?
+A Pygame keretrendszer számos beépített funkciót és módszert kínál az ütközéskezelés egyszerűsítésére. A játékelemek leggyakrabban a rect objektumokkal vannak reprezentálva, és ezek segítségével könnyen ellenőrizheted, hogy mely elemek érintkeznek egymással.
+
+*kép*
+
+Ez a példa azt mutatja be, hogyan lehet két rect objektumot ellenőrizni, hogy érintkeznek-e egymással a colliderect metódussal.

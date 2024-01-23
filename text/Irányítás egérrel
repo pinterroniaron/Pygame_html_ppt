@@ -1,0 +1,13 @@
+Cím:
+Irányítás egérrel - pygame.event modul
+
+Szöveg:
+Ebben a példában a pygame.event modult alkalmazzuk az egér események kezeléséhez a pygame játékokban. A kód folyamatosan figyeli az egérmozgást és kattintásokat, és amikor azok bekövetkeznek, megvizsgálja, hogy milyen típusú esemény történt, majd ennek megfelelően reagál. Például, ha az egér bal gombjára kattintasz, a karakter aktuális pozícióját a kattintási pontra helyezi. Így könnyedén integrálhatod az egér irányítását a játékodba.
+
+
+
+Cím:
+Irányítás egérrel - pygame.mouse modul
+
+Szöveg:
+Ebben a példában a pygame.mouse modult alkalmazzuk az egérmozgás és kattintások közvetlen figyelésére a játéklogikában. A kódban a pygame.mouse.get_pos() metódussal lekérdezzük az egér aktuális pozícióját, majd ez alapján vezérlik a játékbeli elemeket. Az egér bal és jobb gombjainak állapotát is monitorozzuk, és ezek alapján hozunk döntéseket a játékban. Használd ezt a módszert, hogy az egérvezérlést közvetlenül illeszthesd a játékod logikájába.
