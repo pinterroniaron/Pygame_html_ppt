@@ -1,0 +1,12 @@
+Cím:
+Irányítás billentyűzettel - pygame.event modul
+
+Szöveg:
+Ebben a példában a pygame.event modult használjuk a billentyűzet események kezeléséhez pygame játékokban. A kód folyamatosan figyeli az eseményeket, és ha egy billentyű lenyomódik, ellenőrzi, hogy melyik billentyű volt az, majd végrehajtja a megfelelő műveletet. Például, ha a bal nyílbillentyűt lenyomod, a karakter balra mozog. Így könnyedén implementálhatod az irányítást a játékodban ezen a módon.
+
+
+Cím:
+Irányítás billentyűzettel - pygame.key modul
+
+Szöveg:
+Ebben a példában a pygame.key modult használjuk a billentyűzet lenyomva tartásának ellenőrzéséhez. A kódban folyamatosan lekérdezzük, hogy a bal, jobb, felfelé vagy lefelé nyílbillentyű lenyomva van-e. Ha igen, akkor a karakter vagy objektum megfelelő irányba mozog. Ez egy egyszerű és hatékony módja annak, hogy kezeljük a billentyűzet inputot pygame játékainkban.
