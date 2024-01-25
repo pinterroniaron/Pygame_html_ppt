@@ -7,6 +7,9 @@ body {
     font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-repeat: repeat-y;
+    background-size: 100vw 100vh;
+    overflow-x:clip;
 }
 body.stop {
     overflow: hidden;
@@ -52,8 +55,8 @@ section .other {
 section .main {
     font-size: 10vw;
     margin: 0;
-    z-index: 2;
-    position: relative;
+    transform: translateY(-70vh);
+
 }
 
 header {
@@ -263,6 +266,26 @@ code {
     width: 40vw;
 }
 
-.pygameanim {
-    transform: translateY(-100%);
+.image1 {
+    transform: translateX(-60vw);
+}
+
+.image2 {
+    transform: translateX(60vw);
+}
+
+.image3 {
+    transform: translateX(-60vw);
+}
+
+.image4 {
+    transform: translateX(60vw);
+}
+
+.image5 {
+    transform: translateX(-60vw);
+}
+
+.image6 {
+    transform: translateX(60vw);
 }

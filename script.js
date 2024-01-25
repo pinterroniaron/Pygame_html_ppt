@@ -1,9 +1,6 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-
-gsap.registerPlugin(ScrollTrigger);
-
 document.addEventListener('DOMContentLoaded', function() {
     var header = document.getElementById('myHeader');
     var page = document.getElementById('page');
@@ -45,13 +42,134 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-gsap.to(".pygameanim", {
+gsap.to(".main", {
     scrollTrigger: {
-        trigger: ".#pygameanim",
-        toggleActions: "restart pause resume reset",
-        markers: true
+        trigger: ".main",
+        toggleActions: "restart none resume reset",
     },
     y: 0,
+    x: 0,
     duration: 2,
-    rotation: 360
+    rotation: 0,
+
+})
+
+gsap.to(".image1", {
+    scrollTrigger: {
+        trigger: ".image2",
+        toggleActions: "restart pause resume reset",
+        start: "-200 center",
+        end: "-150 top",
+        scrub: 1,
+        snap: {
+            snapTo: "",
+            duration: { min: 8, max: 10 },
+            delay: 0.2,
+            ease: "power1.inOut",
+        },
+    },
+    y: 0,
+    x: 0,
+    duration: 2,
+    rotation: 0
+})
+
+gsap.to(".image2", {
+    scrollTrigger: {
+        trigger: ".image1",
+        toggleActions: "restart pause resume reset",
+        start: "-200 center",
+        end: "-150 top",
+        scrub: 2,
+        snap: {
+            snapTo: "",
+            duration: { min: 5, max: 10 },
+            delay: 0.2,
+            ease: "power1.inOut",
+        },
+    },
+    y: 0,
+    x: 0,
+    duration: 2,
+    rotation: 0
+})
+
+gsap.to(".image3", {
+    scrollTrigger: {
+        trigger: ".image3",
+        toggleActions: "restart pause resume reset",
+        start: "-200 center",
+        end: "-150 top",
+        scrub: 2,
+        snap: {
+            snapTo: "",
+            duration: { min: 8, max: 10 },
+            delay: 0.2,
+            ease: "power1.inOut",
+        },
+    },
+    y: 0,
+    x: 0,
+    duration: 2,
+    rotation: 0
+})
+
+gsap.to(".image4", {
+    scrollTrigger: {
+        trigger: ".image4",
+        toggleActions: "restart pause resume reset",
+        start: "-200 center",
+        end: "-150 top",
+        scrub: 2,
+        snap: {
+            snapTo: "",
+            duration: { min: 8, max: 10 },
+            delay: 0.2,
+            ease: "power1.inOut",
+        },
+    },
+    y: 0,
+    x: 0,
+    duration: 2,
+    rotation: 0
+})
+
+gsap.to(".image5", {
+    scrollTrigger: {
+        trigger: ".image5",
+        toggleActions: "restart pause resume reset",
+        start: "-200 center",
+        end: "-150 top",
+        scrub: 2,
+        snap: {
+            snapTo: "",
+            duration: { min: 8, max: 10 },
+            delay: 0.2,
+            ease: "power1.inOut",
+        },
+    },
+    y: 0,
+    x: 0,
+    duration: 2,
+    rotation: 0
+})
+
+gsap.to(".image6", {
+    scrollTrigger: {
+        trigger: ".image6",
+        toggleActions: "restart pause resume reset",
+        start: "-200 center",
+        end: "-150 top",
+        scrub: 2,
+        snap: {
+            snapTo: "",
+            duration: { min: 8, max: 10 },
+            delay: 0.2,
+            ease: "power1.inOut",
+        },
+    },
+    y: 0,
+    x: 0,
+    duration: 2,
+    rotation: 0
 })
