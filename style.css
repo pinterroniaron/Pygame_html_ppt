@@ -258,3 +258,11 @@ h1 {
         height: 10vh !important;
     }
 }
+
+code {
+    width: 40vw;
+}
+
+.pygameanim {
+    transform: translateY(-100%);
+}

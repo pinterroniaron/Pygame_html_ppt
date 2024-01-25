@@ -1,3 +1,9 @@
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.registerPlugin(ScrollTrigger);
+
 document.addEventListener('DOMContentLoaded', function() {
     var header = document.getElementById('myHeader');
     var page = document.getElementById('page');
@@ -38,3 +44,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+gsap.to(".pygameanim", {
+    scrollTrigger: {
+        trigger: ".#pygameanim",
+        toggleActions: "restart pause resume reset",
+        markers: true
+    },
+    y: 0,
+    duration: 2,
+    rotation: 360
+})
