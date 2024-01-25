@@ -1,7 +1,7 @@
 body {
     line-height: 1.6;
     color: #fff;
-    background: #000;
+    background-image: url(images/kitoltokep.jpeg);
     font-size: 18px;
     font-weight: 400;
     font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif !important;
@@ -50,7 +50,7 @@ section .other {
 }
 
 section .main {
-    font-size: 120px;
+    font-size: 10vw;
     margin: 0;
     z-index: 2;
     position: relative;
@@ -232,4 +232,29 @@ h1 {
         --k: 1 ;
     }
 }
-/*# sourceMappingURL=test.css.map */
+
+
+@media screen and (max-width: 1561px) {
+    #billinput {
+        height: 40vh !important;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    #billinput {
+        height: 30vh !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #billinput {
+        height: 15vh !important;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #utkozes,
+    #mouseinput{
+        height: 10vh !important;
+    }
+}
