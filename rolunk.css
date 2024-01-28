@@ -22,12 +22,12 @@ body {
     overflow: hidden;
 }
 
-button {
+.button1 {
     border: none;
     background: none;
     cursor: pointer;
 }
-button:focus {
+.button1:focus {
     outline: none;
     border: none;
 }
@@ -325,7 +325,7 @@ main {
 
 
 }
-button {
+.button2 {
     --size: 4vh;
     border: none;
     min-width: var(--size);
@@ -340,6 +340,6 @@ button {
     cursor: none;
 }
 
-button:hover {
+.button2:hover {
     color: #E5FFDE;
 }
