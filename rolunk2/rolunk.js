@@ -253,3 +253,4 @@ const waitForImages = () => {
 };
 
 waitForImages();
+
