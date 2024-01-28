@@ -100,8 +100,9 @@ gsap.to(".image3", {
         trigger: ".image3",
         toggleActions: "restart pause resume reset",
         start: "-200 center",
-        end: "-150 top",
+        end: "-150 200",
         scrub: 2,
+        markers: true,
         snap: {
             snapTo: "",
             duration: { min: 1, max: 1.5 },
@@ -120,7 +121,7 @@ gsap.to(".image4", {
         trigger: ".image4",
         toggleActions: "restart pause resume reset",
         start: "-200 center",
-        end: "-150 top",
+        end: "-150 200",
         scrub: 2,
         snap: {
             snapTo: "",
@@ -140,7 +141,7 @@ gsap.to(".image5", {
         trigger: ".image5",
         toggleActions: "restart pause resume reset",
         start: "-200 center",
-        end: "-150 top",
+        end: "-150 200",
         scrub: 2,
         snap: {
             snapTo: "",
@@ -160,7 +161,7 @@ gsap.to(".image6", {
         trigger: ".image6",
         toggleActions: "restart pause resume reset",
         start: "-200 center",
-        end: "-150 top",
+        end: "-150 200",
         scrub: 2,
         snap: {
             snapTo: "",
