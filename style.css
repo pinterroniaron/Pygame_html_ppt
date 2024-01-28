@@ -1,7 +1,7 @@
 body {
     line-height: 1.6;
     color: #fff;
-    background-image: url(images/kitoltokep.jpeg);
+    background-color: #483c6c;
     font-size: 18px;
     font-weight: 400;
     font-family: "-apple-system", "BlinkMacSystemFont", "Roboto", "Helvetica Neue", sans-serif !important;
@@ -171,6 +171,8 @@ header.sticky nav a {
     transition-delay: 0.2s;
 }
 
+
+
 #fixedlink {
     position: fixed;
     bottom: 0;
@@ -228,6 +230,9 @@ h1 {
     /* needs support for animating custom properties */
     /* Firefox not quite there yet, but it's coming */
     animation: k 10s linear infinite;
+}
+#python {
+    background-image: linear-gradient(to bottom right, #130328,#483c6c, #ff002d)
 }
 
 @keyframes k {
@@ -288,4 +293,41 @@ code {
 
 .image6 {
     transform: translateX(60vw);
+}
+
+.buttoncenter {
+    display: block;
+    margin-top: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    width:  70%;
+    height: 5vh;
+    border-radius: 2vh;
+    background-image: linear-gradient(to bottom right,rgb(255, 98, 46),#ffa283);
+    transition-duration: 3s;
+}
+
+.buttoncenter:hover {
+    background-image: linear-gradient(to bottom right ,#ffa283, rgb(255, 98, 46));
+}
+
+.box1 {
+    transform: translateX(-100%);
+    background-image: linear-gradient(#483c6c, #8b4b80);
+}
+
+
+.pygame {
+    transform: translateX(-100%);
+}
+
+#fadein {
+    color: white;
+    font-weight: bold;
+    padding: 3vh;
+    font-size: 20px;
+}
+
+.cards {
+    background-image: linear-gradient(to bottom right, rgba(255, 125, 81, 0.8), rgba(255, 212, 134, 0.8));
 }

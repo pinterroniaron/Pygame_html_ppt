@@ -49,8 +49,9 @@ gsap.to(".main", {
     },
     y: 0,
     x: 0,
-    duration: 2,
+    duration: 2.5,
     rotation: 0,
+    ease: "bounce.out"
 
 })
 
@@ -63,15 +64,15 @@ gsap.to(".image1", {
         scrub: 1,
         snap: {
             snapTo: "",
-            duration: { min: 8, max: 10 },
+            duration: { min: 1, max: 1.5 },
             delay: 0.2,
-            ease: "power1.inOut",
+            ease: "power4.inOut"
         },
     },
     y: 0,
     x: 0,
     duration: 2,
-    rotation: 0
+    rotation: 0,
 })
 
 gsap.to(".image2", {
@@ -83,15 +84,15 @@ gsap.to(".image2", {
         scrub: 2,
         snap: {
             snapTo: "",
-            duration: { min: 5, max: 10 },
+            duration: { min: 1, max: 1.5 },
             delay: 0.2,
-            ease: "power1.inOut",
+            ease: "power4.inOut"
         },
     },
     y: 0,
     x: 0,
     duration: 2,
-    rotation: 0
+    rotation: 0,
 })
 
 gsap.to(".image3", {
@@ -103,15 +104,15 @@ gsap.to(".image3", {
         scrub: 2,
         snap: {
             snapTo: "",
-            duration: { min: 8, max: 10 },
+            duration: { min: 1, max: 1.5 },
             delay: 0.2,
-            ease: "power1.inOut",
+            ease: "power4.inOut"
         },
     },
     y: 0,
     x: 0,
     duration: 2,
-    rotation: 0
+    rotation: 0,
 })
 
 gsap.to(".image4", {
@@ -123,15 +124,15 @@ gsap.to(".image4", {
         scrub: 2,
         snap: {
             snapTo: "",
-            duration: { min: 8, max: 10 },
+            duration: { min: 1, max: 1.5 },
             delay: 0.2,
-            ease: "power1.inOut",
+            ease: "power4.inOut"
         },
     },
     y: 0,
     x: 0,
     duration: 2,
-    rotation: 0
+    rotation: 0,
 })
 
 gsap.to(".image5", {
@@ -143,15 +144,15 @@ gsap.to(".image5", {
         scrub: 2,
         snap: {
             snapTo: "",
-            duration: { min: 8, max: 10 },
+            duration: { min: 1, max: 1.5 },
             delay: 0.2,
-            ease: "power1.inOut",
+            ease: "power4.inOut"
         },
     },
     y: 0,
     x: 0,
     duration: 2,
-    rotation: 0
+    rotation: 0,
 })
 
 gsap.to(".image6", {
@@ -163,13 +164,25 @@ gsap.to(".image6", {
         scrub: 2,
         snap: {
             snapTo: "",
-            duration: { min: 8, max: 10 },
+            duration: { min: 1, max: 1.5},
             delay: 0.2,
-            ease: "power1.inOut",
+            ease: "power4.inOut"
         },
     },
     y: 0,
     x: 0,
     duration: 2,
-    rotation: 0
+    rotation: 0,
+})
+
+gsap.to(".box1", {
+    scrollTrigger: {
+        trigger: ".box1",
+        toggleActions: "restart pause resume reset",
+    },
+    x: 0,
+    duration: 3,
+    rotation: 0,
+    ease: "bounce.inOut"
+
 })
