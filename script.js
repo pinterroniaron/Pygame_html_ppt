@@ -184,6 +184,7 @@ gsap.to(".box1", {
     x: 0,
     duration: 3,
     rotation: 0,
-    ease: "bounce.inOut"
+    ease: "bounce.out",
+    delay: 0.5
 
 })
