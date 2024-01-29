@@ -8,120 +8,80 @@
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
     <title>Title</title>
 </head>
 <body>
-<div class="app">
+<div class="slider">
+    <div class="slider-wrapper flex">
+        <div class="slide flex">
+            <div class="slide-image slider-link prev"><img src="images/RprofilKep.jpg"><div class="overlay"></div></div>
+            <div class="slide-content">
+                <div class="slide-name">Pintér Roni Áron</div>
+                <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                <main>
 
-    <div class="cardList">
-        <button class="cardList__btn btn btn--left button1">
-            <div class="icon">
-                <svg>
-                    <use xlink:href="#arrow-left"></use>
-                </svg>
-            </div>
-        </button>
-
-        <div class="cards__wrapper">
-            <div class="card current--card">
-                <div class="card__image">
-                    <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-                </div>
-            </div>
-
-            <div class="card next--card">
-                <div class="card__image">
-                    <img src="images/RProfilKep.jpg" alt="" />
-                </div>
-            </div>
-
-            <div class="card previous--card">
-                <div class="card__image">
-                    <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-                </div>
+                    <button onclick="window.location.href='https://www.facebook.com/pinter.aron01'">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </button>
+                </main>
             </div>
         </div>
+        <div class="slide flex">
+            <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img3.jpg"><div class="overlay"></div></div>
+            <div class="slide-content">
+                <div class="slide-name">Széphalmi Áron</div>
+                <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                <main>
 
-        <button class="cardList__btn btn btn--right button1">
-            <div class="icon">
-                <svg>
-                    <use xlink:href="#arrow-right"></use>
-                </svg>
+                    <button onclick="window.location.href='#'">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </button>
+                </main>
             </div>
-        </button>
-    </div>
+        </div>
+        <div class="slide flex">
+            <div class="slide-image slider-link next"><img src="https://goranvrban.com/codepen/img5.jpg"><div class="overlay"></div></div>
+            <div class="slide-content">
+                <div class="slide-name">Kovács Péter</div>
+                <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                <main>
 
-    <div class="infoList">
-        <div class="info__wrapper">
-            <div class="info current--info">
-                <h1 class="text name">Széphalmi Áron</h1>
-
-
-
-
-                <div class="cursor cursor--large"></div>
-                <div class="cursor cursor--small"></div>
-                <h4 class="text location">Scotland</h4>
-                <p class="text description">The mountains are calling</p>
-                <button class="button2" onclick="window.location.href='https://www.youtube.com/'">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </button>
-                <button class="button2">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                </button>
-            </div>
-
-
-            <div class="info next--info">
-                <h1 class="text name">Pintér Roni Áron</h1>
-                <h4 class="text location">Weboldal</h4>
-                <p class="text description">Design</p>
-            </div>
-
-            <div class="info previous--info">
-                <h1 class="text name">Kovács Péter</h1>
-                <h4 class="text location">France</h4>
-                <p class="text description">Let your dreams come true</p>
+                    <button onclick="window.location.href='#'">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </button>
+                </main>
             </div>
         </div>
     </div>
-
-
-    <div class="app__bg">
-        <div class="app__bg__image current--image">
-            <img src="https://source.unsplash.com/Z8dtTatMVMw" alt="" />
-        </div>
-        <div class="app__bg__image next--image">
-            <img src="https://source.unsplash.com/9dmycbFE7mQ" alt="" />
-        </div>
-        <div class="app__bg__image previous--image">
-            <img src="https://source.unsplash.com/m7K4KzL5aQ8" alt="" />
-        </div>
+    <div class="arrows">
+        <a href="#" title="Previous" class="arrow slider-link prev"></a>
+        <a href="#" title="Next" class="arrow slider-link next"></a>
     </div>
 </div>
-
-<div class="loading__wrapper">
-    <div class="loader--text">Loading...</div>
-    <div class="loader">
-        <span></span>
-    </div>
-</div>
-
-
-<svg class="icons" style="display: none;">
-    <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-        <polyline points='328 112 184 256 328 400'
-                  style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-    </symbol>
-    <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-        <polyline points='184 112 328 256 184 400'
-                  style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-    </symbol>
-</svg>
-
-
 <script src="rolunk.js"></script>
-
 </body>
 </html>
