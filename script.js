@@ -42,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
 gsap.to(".main", {
     scrollTrigger: {
         trigger: ".main",
@@ -54,6 +56,8 @@ gsap.to(".main", {
     ease: "bounce.out"
 
 })
+let mm = gsap.matchMedia();
+
 
 gsap.to(".image1", {
     scrollTrigger: {
@@ -102,7 +106,6 @@ gsap.to(".image3", {
         start: "-200 center",
         end: "-150 200",
         scrub: 2,
-        markers: true,
         snap: {
             snapTo: "",
             duration: { min: 1, max: 1.5 },
@@ -186,5 +189,96 @@ gsap.to(".box1", {
     rotation: 0,
     ease: "bounce.out",
     delay: 0.5
+
+})
+
+
+
+
+mm.add("(   max-width: 756px)", () => {
+
+    gsap.to(".image1", {
+        scrollTrigger: {
+            trigger: ".image1",
+            start: "-200 center",
+            end: "-150 top",
+            scrub: 1,
+        },
+        y: 0,
+        x: 0,
+        duration: 2,
+        rotation: 0,
+    })
+
+    gsap.to(".image2", {
+        scrollTrigger: {
+            trigger: ".image2",
+            start: "-200 center",
+            end: "-150 top",
+            scrub: 1,
+        },
+        y: 0,
+        x: 0,
+        duration: 2,
+        rotation: 0,
+    })
+
+    gsap.to(".image3", {
+        scrollTrigger: {
+            trigger: ".image3",
+            toggleActions: "restart pause resume reset",
+            start: "-200 center",
+            end: "-150 200",
+            scrub: 2,
+        },
+        y: 0,
+        x: 0,
+        duration: 2,
+        rotation: 0,
+    })
+
+    gsap.to(".image4", {
+        scrollTrigger: {
+            trigger: ".image4",
+            toggleActions: "restart pause resume reset",
+            start: "-200 center",
+            end: "-150 200",
+            scrub: 2,
+        },
+        y: 0,
+        x: 0,
+        duration: 2,
+        rotation: 0,
+    })
+
+    gsap.to(".image5", {
+        scrollTrigger: {
+            trigger: ".image5",
+            toggleActions: "restart pause resume reset",
+            start: "-200 center",
+            end: "-150 200",
+            scrub: 2,
+        },
+        y: 0,
+        x: 0,
+        duration: 2,
+        rotation: 0,
+    })
+
+    gsap.to(".image6", {
+        scrollTrigger: {
+            trigger: ".image6",
+            toggleActions: "restart pause resume reset",
+            start: "-200 center",
+            end: "-300 top",
+            scrub: 2,
+        },
+        y: 0,
+        x: 0,
+        duration: 2,
+        rotation: 0,
+    })
+
+
 
 })
