@@ -52,132 +52,116 @@ gsap.to(".main", {
     y: 0,
     x: 0,
     duration: 2.5,
-    rotation: 0,
     ease: "bounce.out"
 
-})
+});
 let mm = gsap.matchMedia();
 
+mm.add("(   min-width: 756px)", () => {
 
-gsap.to(".image1", {
-    scrollTrigger: {
-        trigger: ".image2",
-        toggleActions: "restart pause resume reset",
-        start: "-200 center",
-        end: "-150 top",
-        scrub: 1,
-        snap: {
-            snapTo: "",
-            duration: { min: 1, max: 1.5 },
-            delay: 0.2,
-            ease: "power4.inOut"
+    gsap.to(".image1", {
+        scrollTrigger: {
+            trigger: ".image2",
+            start: "-200 center",
+            end: "-150 top",
+            scrub: 2,
+            snap: {
+                snapTo: "",
+                duration: { min: 1, max: 1.5 },
+                delay: 0.2,
+                ease: "power4.inOut"
+            },
         },
-    },
-    y: 0,
-    x: 0,
-    duration: 2,
-    rotation: 0,
-})
+        y: 0,
+        x: 0,
+    });
 
-gsap.to(".image2", {
-    scrollTrigger: {
-        trigger: ".image1",
-        toggleActions: "restart pause resume reset",
-        start: "-200 center",
-        end: "-150 top",
-        scrub: 2,
-        snap: {
-            snapTo: "",
-            duration: { min: 1, max: 1.5 },
-            delay: 0.2,
-            ease: "power4.inOut"
+    gsap.to(".image2", {
+        scrollTrigger: {
+            trigger: ".image1",
+            start: "-200 center",
+            end: "-150 top",
+            scrub: 2,
+            snap: {
+                snapTo: "",
+                duration: { min: 1, max: 1.5 },
+                delay: 0.2,
+                ease: "power4.inOut"
+            },
         },
-    },
-    y: 0,
-    x: 0,
-    duration: 2,
-    rotation: 0,
-})
+        y: 0,
+        x: 0,
+    });
 
-gsap.to(".image3", {
-    scrollTrigger: {
-        trigger: ".image3",
-        toggleActions: "restart pause resume reset",
-        start: "-200 center",
-        end: "-150 200",
-        scrub: 2,
-        snap: {
-            snapTo: "",
-            duration: { min: 1, max: 1.5 },
-            delay: 0.2,
-            ease: "power4.inOut"
+    gsap.to(".image3", {
+        scrollTrigger: {
+            trigger: ".image3",
+            start: "-200 center",
+            end: "-150 200",
+            scrub: 2,
+            snap: {
+                snapTo: "",
+                duration: { min: 1, max: 1.5 },
+                delay: 0.2,
+                ease: "power4.inOut"
+            },
         },
-    },
-    y: 0,
-    x: 0,
-    duration: 2,
-    rotation: 0,
-})
+        y: 0,
+        x: 0,
+    });
 
-gsap.to(".image4", {
-    scrollTrigger: {
-        trigger: ".image4",
-        toggleActions: "restart pause resume reset",
-        start: "-200 center",
-        end: "-150 200",
-        scrub: 2,
-        snap: {
-            snapTo: "",
-            duration: { min: 1, max: 1.5 },
-            delay: 0.2,
-            ease: "power4.inOut"
+    gsap.to(".image4", {
+        scrollTrigger: {
+            trigger: ".image4",
+            start: "-200 center",
+            end: "-150 200",
+            scrub: 2,
+            snap: {
+                snapTo: "",
+                duration: { min: 1, max: 1.5 },
+                delay: 0.2,
+                ease: "power4.inOut"
+            },
         },
-    },
-    y: 0,
-    x: 0,
-    duration: 2,
-    rotation: 0,
-})
+        y: 0,
+        x: 0,
+    });
 
-gsap.to(".image5", {
-    scrollTrigger: {
-        trigger: ".image5",
-        toggleActions: "restart pause resume reset",
-        start: "-200 center",
-        end: "-150 200",
-        scrub: 2,
-        snap: {
-            snapTo: "",
-            duration: { min: 1, max: 1.5 },
-            delay: 0.2,
-            ease: "power4.inOut"
+    gsap.to(".image5", {
+        scrollTrigger: {
+            trigger: ".image5",
+            start: "-200 center",
+            end: "-150 200",
+            scrub: 2,
+            snap: {
+                snapTo: "",
+                duration: { min: 1, max: 1.5 },
+                delay: 0.2,
+                ease: "power4.inOut"
+            },
         },
-    },
-    y: 0,
-    x: 0,
-    duration: 2,
-    rotation: 0,
-})
+        y: 0,
+        x: 0,
+    });
 
-gsap.to(".image6", {
-    scrollTrigger: {
-        trigger: ".image6",
-        toggleActions: "restart pause resume reset",
-        start: "-200 center",
-        end: "-150 200",
-        scrub: 2,
-        snap: {
-            snapTo: "",
-            duration: { min: 1, max: 1.5},
-            delay: 0.2,
-            ease: "power4.inOut"
+    gsap.to(".image6", {
+        scrollTrigger: {
+            trigger: ".image6",
+            start: "-200 center",
+            end: "-150 200",
+            scrub: 2,
+            snap: {
+                snapTo: "",
+                duration: { min: 1, max: 1.5},
+                delay: 0.2,
+                ease: "power4.inOut"
+            },
         },
-    },
-    y: 0,
-    x: 0,
-    duration: 2,
-    rotation: 0,
-})
+        y: 0,
+        x: 0,
+    });
+
+});
 
 gsap.to(".box1", {
     scrollTrigger: {
@@ -190,38 +174,33 @@ gsap.to(".box1", {
     ease: "bounce.out",
     delay: 0.5
 
-})
+});
 
 
 
 
-mm.add("(   max-width: 756px)", () => {
+
 
     gsap.to(".image1", {
         scrollTrigger: {
             trigger: ".image1",
             start: "-200 center",
             end: "-150 top",
-            scrub: 1,
+            scrub: 2,
         },
-        y: 0,
         x: 0,
-        duration: 2,
-        rotation: 0,
-    })
+    });
 
     gsap.to(".image2", {
         scrollTrigger: {
             trigger: ".image2",
             start: "-200 center",
             end: "-150 top",
-            scrub: 1,
+            scrub: 2,
         },
         y: 0,
         x: 0,
-        duration: 2,
-        rotation: 0,
-    })
+    });
 
     gsap.to(".image3", {
         scrollTrigger: {
@@ -235,7 +214,7 @@ mm.add("(   max-width: 756px)", () => {
         x: 0,
         duration: 2,
         rotation: 0,
-    })
+    });
 
     gsap.to(".image4", {
         scrollTrigger: {
@@ -249,7 +228,7 @@ mm.add("(   max-width: 756px)", () => {
         x: 0,
         duration: 2,
         rotation: 0,
-    })
+    });
 
     gsap.to(".image5", {
         scrollTrigger: {
@@ -263,7 +242,7 @@ mm.add("(   max-width: 756px)", () => {
         x: 0,
         duration: 2,
         rotation: 0,
-    })
+    });
 
     gsap.to(".image6", {
         scrollTrigger: {
@@ -277,8 +256,8 @@ mm.add("(   max-width: 756px)", () => {
         x: 0,
         duration: 2,
         rotation: 0,
-    })
+    });
 
 
 
-})
+
