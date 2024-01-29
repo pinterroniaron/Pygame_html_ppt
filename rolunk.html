@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="rolunk.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/pygamefavicon.png">
+    <title>Rólunk</title>
+</head>
+<header id="myHeader" class="">
+    <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+         viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+        <g>
+
+        <path class="st0" d="M72.02,175.59c-16.09,2.51-26.36-4.8-32.87-17.59c-10.08-19.82-10.06-40.14-0.02-59.98c6.07-12,15.58-18.75,30.04-18.2
+			c17.63,0.67,35.31,0.16,52.96,0.16c1.79,0,3.59,0,5.6,0c0-2.78,0-5.04,0-7.88c-15.79,0-31.51,0-47.49,0
+			c0-7.35-0.42-14.16,0.12-20.9c0.55-6.86,4.53-12.07,11.13-14.03c7.28-2.17,14.85-4.41,22.34-4.6c13.26-0.34,26.66,0.04,39.81,1.63
+			c14.52,1.76,22.36,11.99,22.37,26.52c0.01,13.33,0.05,26.65-0.02,39.98c-0.07,13.64-9.59,23.21-23.29,23.3
+			c-15.99,0.1-31.98,0-47.97,0.04c-20.41,0.05-32.71,12.33-32.72,32.6C72.01,163.04,72.02,169.45,72.02,175.59z M110.27,54.7
+			c-0.04-4.79-3.87-8.65-8.51-8.6c-4.6,0.05-8.56,4.09-8.54,8.71c0.02,4.7,3.88,8.45,8.67,8.43
+			C106.84,63.22,110.31,59.68,110.27,54.7z"/>
+            <path class="st0" d="M183.98,80.48c13.14-2.31,22.67,2.48,29.89,12.54c13.59,18.94,13.65,50.83,0.06,69.83c-6.17,8.63-14.13,13.54-25.32,13.28
+			c-18.16-0.42-36.33-0.11-54.49-0.11c-1.81,0-3.61,0-5.76,0c0,2.72,0,5.09,0,7.88c15.77,0,31.37,0,46.91,0
+			c2.39,18.66,0.97,28.44-18.85,35.47c-19.53,6.94-39.28,6.56-58.55-1.38c-4.36-1.8-8.42-4.7-12.09-7.73
+			c-4.14-3.43-5.88-8.25-5.83-13.78c0.12-14,0-28,0.05-41.99c0.05-12.98,9.19-22.3,22.34-22.45c16.5-0.18,33-0.05,49.49-0.06
+			c19.32-0.02,31.79-12.32,32.12-31.76C184.07,93.73,183.98,87.25,183.98,80.48z M162.38,200.27c0.08-4.88-3.47-8.56-8.33-8.61
+			c-4.82-0.05-8.63,3.62-8.68,8.36c-0.05,4.67,3.81,8.68,8.43,8.77C158.44,208.88,162.3,205.06,162.38,200.27z"/>
+            <path class="st1" d="M110.27,54.7c0.05,4.98-3.43,8.51-8.39,8.54c-4.79,0.02-8.65-3.73-8.67-8.43c-0.02-4.63,3.94-8.66,8.54-8.71
+			C106.4,46.05,110.22,49.91,110.27,54.7z"/>
+            <path class="st1" d="M162.38,200.27c-0.08,4.78-3.94,8.61-8.58,8.52c-4.62-0.09-8.48-4.1-8.43-8.77c0.05-4.74,3.86-8.41,8.68-8.36
+			C158.9,191.72,162.46,195.39,162.38,200.27z"/>
+	</g>
+        </g>
+</svg>
+    <!--<svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714.6 401.1">
+        <path fill="#fff" fill-rule="evenodd" d="M502.8 0h211.8l-23 39.7-138.5 240L483 401H342.7L413 279.6 251.4 0h140.3L483 158.1 538.6 62 502.8 0Zm-201 279.6L140.1 0H0l231.7 401 70-121.4Z"/>
+    </svg>-->
+    <nav>
+
+        <a href="index.html">Pygame</a>
+        <a href="rolunk.html">Rólunk</a>
+
+        <button id="openmenu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+</header>
+<body>
+<div class="blog-slider">
+    <div class="blog-slider__wrp swiper-wrapper">
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+
+                <img src="images/RprofilKep.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+                <div class="blog-slider__title">Pintér Roni Áron</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi? </div>
+                <main class="blog-slider__button">
+
+                    <button onclick="window.location.href='https://www.facebook.com/pinter.aron01'">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </button>
+
+                </main>
+            </div>
+        </div>
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+                <div class="blog-slider__title">Széphalmi Áron</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                <main class="blog-slider__button">
+
+                    <button onclick="window.location.href='#'">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </button>
+
+                </main>
+            </div>
+        </div>
+
+        <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+                <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp" alt="">
+            </div>
+            <div class="blog-slider__content">
+                <div class="blog-slider__title">Kovács Péter</div>
+                <div class="blog-slider__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?</div>
+                <main class="blog-slider__button">
+
+                    <button onclick="window.location.href='#'">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </button>
+                    <button>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </button>
+
+                </main>
+            </div>
+        </div>
+
+    </div>
+    <div class="blog-slider__pagination"></div>
+</div>
+<script src="rolunk.js"></script>
+</body>
+</html>
