@@ -131,7 +131,7 @@ header nav button {
 header nav button span {
     width: 40%;
     background: #fff;
-    height: 2%;
+    height: 1px;
     display: block;
     margin: 7% auto;
     transform: scalex(0);
