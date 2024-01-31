@@ -426,3 +426,59 @@ code {
 .cards {
     background-image: linear-gradient(to bottom right, rgba(255, 125, 81, 0.8), rgba(255, 212, 134, 0.8));
 }
+
+.btn-5 {
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    background: rgb(255,27,0);
+    background: linear-gradient(to bottom right, rgb(255, 220, 99) 0%, rgb(255, 127, 74) 100%);
+}
+.btn-5:hover {
+    color: #ff5717;
+    background: rgba(155, 29, 32, 0.4);
+    box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #ff713c;
+    box-shadow:
+            -1px -1px 5px 0px #fff,
+            7px 7px 20px 0px #0003,
+            4px 4px 5px 0px #0002;
+    transition:400ms ease all;
+}
+.btn-5:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+    width:100%;
+    transition:800ms ease all;
+}
+
+
+.custom-btn {
+    width: 70%;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
