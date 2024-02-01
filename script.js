@@ -259,5 +259,50 @@ gsap.to(".box1", {
     });
 
 
+gsap.to(".pdiv", {
+    scrollTrigger: {
+        trigger: ".pdiv",
+        toggleActions: "play pause resume none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1
+})
+
+gsap.to(".pdiv2", {
+    scrollTrigger: {
+        trigger: ".pdiv2",
+        toggleActions: "play pause resume none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1
+})
+
+gsap.to(".ptext", {
+    scrollTrigger: {
+        trigger: ".pdiv",
+        toggleActions: "play pause resume none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1,
+    delay: 2
+})
+
+gsap.to(".ptext2", {
+    scrollTrigger: {
+        trigger: ".pdiv2",
+        toggleActions: "play pause resume none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1,
+    delay: 2
+})
 
 
