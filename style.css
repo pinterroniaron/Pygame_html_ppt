@@ -9,7 +9,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-repeat: repeat-y;
     background-size: 100% 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
     max-width: 100%;
 
 }
