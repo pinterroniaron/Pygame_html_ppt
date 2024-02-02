@@ -281,10 +281,43 @@ gsap.to(".pdiv2", {
     opacity: 1
 })
 
+gsap.to(".pdiv3", {
+    scrollTrigger: {
+        trigger: ".pdiv3",
+        toggleActions: "play pause resume none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1
+})
+
+gsap.to(".pdiv4", {
+    scrollTrigger: {
+        trigger: ".pdiv4",
+        toggleActions: "play pause resume none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1
+})
+
+gsap.to(".pdiv5", {
+    scrollTrigger: {
+        trigger: ".pdiv5",
+        toggleActions: "play pause resume none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1
+})
+
 gsap.to(".ptext", {
     scrollTrigger: {
         trigger: ".pdiv",
-        toggleActions: "play pause resume none",
+        toggleActions: "play none none none",
     },
     y: 0,
     duration: 2,
@@ -296,7 +329,7 @@ gsap.to(".ptext", {
 gsap.to(".ptext2", {
     scrollTrigger: {
         trigger: ".pdiv2",
-        toggleActions: "play pause resume none",
+        toggleActions: "play none none none",
     },
     y: 0,
     duration: 2,
@@ -305,4 +338,38 @@ gsap.to(".ptext2", {
     delay: 2
 })
 
+gsap.to(".ptext3", {
+    scrollTrigger: {
+        trigger: ".pdiv3",
+        toggleActions: "play none none none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1,
+    delay: 2
+})
 
+gsap.to(".ptext4", {
+    scrollTrigger: {
+        trigger: ".pdiv4",
+        toggleActions: "play none none none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1,
+    delay: 2
+})
+
+gsap.to(".ptext5", {
+    scrollTrigger: {
+        trigger: ".pdiv5",
+        toggleActions: "play none none none",
+    },
+    y: 0,
+    duration: 2,
+    rotation: 0,
+    opacity: 1,
+    delay: 2
+})

@@ -72,7 +72,7 @@
         <div id="pygamefelirat" ><h1 class="main pygameanim">Pygame</h1></div>
     </section>
     <div id="billinput" style="max-width: 100vw; height: 15vh"><h1 class="other">Irányítás billentyűzettel</h1></div>
-    <section style="background-image:url(images/iranyitasBill.jpeg)">
+    <section class="section1" style="background-image:url(images/iranyitasBill.jpeg)">
         <div class="pdiv"><p class="ptext">A billentyűzet eseményeinek kezelése kulcsfontosságú a játékvezérlés szempontjából. Bontsuk le lépésről lépésre, hogyan figyeljük meg és reagáljunk a lenyomott vagy felengedett billentyűkre.</p></div>
         <div class="highlight row" style="width: 100%">
             <pre class="image1 col-md-6 col-ms-12"><code draggable="true" class="language-python">import pygame
@@ -131,6 +131,7 @@
     </section>
     <div id="utkozes row" style="max-width: 100vw; height: 18vh; "><h1 class="other">Ütközés</h1></div>
     <section style="background-image:url(images/hatter2.jpeg)">
+        <div class="pdiv3"><p class="ptext3">A Pygame keretrendszer számos beépített funkciót és módszert kínál az ütközéskezelés egyszerűsítésére. A játékelemek leggyakrabban a rect objektumokkal vannak reprezentálva, és ezek segítségével könnyen ellenőrizheted, hogy mely elemek érintkeznek egymással.</p></div>
         <div class="highlight" style="width: 100%">
             <pre class="image3 col-md-6 col-ms-12"><code draggable="true" class="language-python">if balloon_rect.colliderect(bird_rect):
           collision = True
@@ -144,6 +145,7 @@
               screen.blit(balloon_surf, balloon_rect)</code></pre>
             <!--            <img style="float: left; border: #233D4D solid; border-radius: 2vh" src="images/3.1.1.png" alt="">-->
         </div>
+        <div class="pdiv4"><p class="ptext4">Ez a példa azt mutatja be, hogyan lehet két rect objektumot ellenőrizni, hogy érintkeznek-e egymással a colliderect metódussal.</p></div>
     </section>
     <div id="mouseinput row" style="max-width: 100vw; height: auto; "><h1 class="other">Irányítás egérrel</h1></div>
     <section style="background-image:url(images/hatter3.jpeg)">
@@ -158,6 +160,10 @@ if event.type == pygame.MOUSEBUTTONDOWN:
 print('az egér gombja lenyomva', pygame.mouse.get_pressed())
 print(pygame.mouse.get_pressed()[0])      </code></pre>
             <!--            <img style="float: left; border: #233D4D solid; border-radius: 2vh" src="images/3.1.1.png" alt="">-->
+        </div>
+        <div class="row" style="display: flex; ">
+        <div class="pdiv5 col-md-6 col-ms-12"><p class="ptext5">Ebben a példában a pygame.event modult alkalmazzuk az egér események kezeléséhez a pygame játékokban. A kód folyamatosan figyeli az egérmozgást és kattintásokat, és amikor azok bekövetkeznek, megvizsgálja, hogy milyen típusú esemény történt, majd ennek megfelelően reagál. Például, ha az egér bal gombjára kattintasz, a karakter aktuális pozícióját a kattintási pontra helyezi. Így könnyedén integrálhatod az egér irányítását a játékodba.</p></div>
+        <div class="pdiv5 col-md-6 col-ms-12"><p class="ptext5">Ebben a példában a pygame.mouse modult alkalmazzuk az egérmozgás és kattintások közvetlen figyelésére a játéklogikában. A kódban a pygame.mouse.get_pos() metódussal lekérdezzük az egér aktuális pozícióját, majd ez alapján vezérlik a játékbeli elemeket. Az egér bal és jobb gombjainak állapotát is monitorozzuk, és ezek alapján hozunk döntéseket a játékban. Használd ezt a módszert, hogy az egérvezérlést közvetlenül illeszthesd a játékod logikájába.</p></div>
         </div>
     </section>
     <div style="background-image: linear-gradient(#483c6c, #8b4b80)">
