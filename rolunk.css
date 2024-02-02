@@ -400,3 +400,8 @@ header.sticky nav a {
     transform: scale(0.3);
     transition-delay: 0.2s;
 }
+
+ion-icon,
+svg{
+    cursor: pointer;
+}

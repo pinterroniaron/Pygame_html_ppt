@@ -550,4 +550,6 @@ code {
     margin-bottom: 20px;
 }
 
-
+.sulipyimg {
+    cursor: pointer;
+}
