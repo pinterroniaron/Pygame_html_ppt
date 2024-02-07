@@ -169,9 +169,9 @@ gsap.to(".box1", {
         toggleActions: "restart pause resume reset",
     },
     x: 0,
-    duration: 3,
+    duration: 2,
     rotation: 0,
-    ease: "bounce.out",
+    ease: "back",
     delay: 0.5
 
 });

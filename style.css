@@ -132,9 +132,9 @@ header nav a {
     text-decoration: none;
     font-weight: 700;
     display: flex;
-    padding: 10px 20px;
+    padding: 6px 16px;
     line-height: 1;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: 2px;
     text-transform: lowercase;
     transition: 0.3s all cubic-bezier(0.075, 0.82, 0.165, 1) 0.6s;
@@ -353,7 +353,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 1561px) {
+@media screen and (max-width: 1060px) {
     #billinput {
         height: 40vh !important;
     }
@@ -364,6 +364,12 @@ h1 {
 @media screen and (max-width: 1543px) {
     #billinput {
         height: 30vh !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #billinput {
+        height: 60vh !important;
     }
 }
 

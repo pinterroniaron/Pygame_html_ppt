@@ -75,53 +75,18 @@
     <section class="section1" style="background-image:url(images/iranyitasBill.jpeg)">
         <div class="pdiv"><p class="ptext">A billentyűzet eseményeinek kezelése kulcsfontosságú a játékvezérlés szempontjából. Bontsuk le lépésről lépésre, hogyan figyeljük meg és reagáljunk a lenyomott vagy felengedett billentyűkre.</p></div>
         <div class="highlight row" style="width: 100%">
-            <pre class="image1 col-md-6 col-ms-12"><code draggable="true" class="language-python">import pygame
-
-  WIDTH, HEIGHT = 600, 300
-
-  pygame.init()
-  screen = pygame.display.set_mode((WIDTH, HEIGHT))
-  clock = pygame.time.Clock()
-
-  running = True
-  while running:
-      for event in pygame.event.get():
-          if event.type == pygame.QUIT:
-              running = False
-          # keyboard input with event loop
-          # if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
-          #     print('SPACE DOWN')
-
-      # keyboard input with pygame.key
-      # print(pygame.key.get_pressed())
-      keys = pygame.key.get_pressed()
-      if keys[pygame.K_SPACE]:
-          print(keys[pygame.K_SPACE])
-
-      pygame.display.update()
-      clock.tick(1)
-
-  pygame.quit()</code></pre>
+            <pre class="image1 col-md-6 col-ms-12"><code draggable="true" class="language-python">
+for event in pygame.event.get():
+    if event.type == pygame.QUIT:
+        running = False
+    if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
+        print('SPACE DOWN')
+            </code></pre>
             <pre class="image2 col-md-6 col-ms-12"><code class="language-python">
-                running = True
-  while running:
-      for event in pygame.event.get():
-          if event.type == pygame.QUIT:
-              running = False
-
-      keys = pygame.key.get_pressed()
-      if keys[pygame.K_RIGHT] and bird_rect.right <= WIDTH:
-          bird = pygame.image.load('img/bird1.png')
-          bird_x += SPEED
-      elif keys[pygame.K_LEFT] and bird_rect.left >= 0:
-          bird = pygame.image.load('img/bird1back.png')
-          bird_x -= SPEED
-
-      if keys[pygame.K_UP] and bird_rect.top >= 0:
-          bird_y -= SPEED
-      elif keys[pygame.K_DOWN] and bird_rect.bottom <= HEIGHT:
-          bird_y += SPEED
-                </code></pre>
+keys = pygame.key.get_pressed()
+if keys[pygame.K_SPACE]:
+    print(keys[pygame.K_SPACE])
+            </code></pre>
 <!--            <img style="float: left; border: #233D4D solid; border-radius: 2vh" src="images/3.1.1.png" alt="">-->
         </div>
         <div class="row" style="display: flex">
@@ -169,13 +134,13 @@ print(pygame.mouse.get_pressed()[0])      </code></pre>
     <div style="background-image: linear-gradient(#483c6c, #8b4b80)">
         <div class="row my-3 box1" style=" padding-bottom: 15px">
             <div class="col-sm-12 col-md-4 column1">
-                <div class="p-5 ms-3 me-3 mt-3 cards" style=" border-radius: 2vh;"><p style="text-align: center; color: #483c6c; font-weight: bold">Sulipy</p><br><iframe class="center img-fluid img-thumbnail rounded mx-auto d-block sulipyimg" style="width: 100%; height: 17rem" src="https://www.youtube.com/embed/S5fDlS7vesk?si=-SgAVT6s6SfxQ1wV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><button class="buttoncenter custom-btn btn-5" style="color: white;" onclick="location.href='https://youtu.be/S5fDlS7vesk?si=Ab_G_VCLGpMG_ttp'"><span>3.1 Irányítás billentyűzettel</span></button></div>
+                <div class="p-5 ms-3 me-3 mt-3 cards" style=" border-radius: 2vh;"><p style="text-align: center; color: #483c6c; font-weight: bold">Sulipy</p><br><iframe class="center img-fluid img-thumbnail rounded mx-auto d-block sulipyimg" style="width: 100%; height: 100%" src="https://www.youtube.com/embed/S5fDlS7vesk?si=-SgAVT6s6SfxQ1wV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><button class="buttoncenter custom-btn btn-5" style="color: white;" onclick="location.href='https://youtu.be/S5fDlS7vesk?si=Ab_G_VCLGpMG_ttp'"><span>3.1 Irányítás bill.</span></button></div>
             </div>
             <div class="col-sm-12 col-md-4 column2">
-                <div class="p-5 ms-3 me-3 mt-3 cards" style=" border-radius: 2vh;"><p style="text-align: center; color: #483c6c; font-weight: bold">Sulipy</p><br><iframe class="center img-fluid img-thumbnail rounded mx-auto d-block sulipyimg" style="width: 100%; height: 17rem" src="https://www.youtube.com/embed/WnE9n4ntPHA?si=LBF7Zh4lWCBb-mHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><button class="buttoncenter custom-btn btn-5" style="color: white;" onclick="location.href='https://youtu.be/WnE9n4ntPHA?si=TiHqfx_Nw_0wJCsJ'"><span>3.2 Ütközés (Collide)</span></button></div>
+                <div class="p-5 ms-3 me-3 mt-3 cards" style=" border-radius: 2vh;"><p style="text-align: center; color: #483c6c; font-weight: bold">Sulipy</p><br><iframe class="center img-fluid img-thumbnail rounded mx-auto d-block sulipyimg" style="width: 100%; height: 100%" src="https://www.youtube.com/embed/WnE9n4ntPHA?si=LBF7Zh4lWCBb-mHY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><button class="buttoncenter custom-btn btn-5" style="color: white;" onclick="location.href='https://youtu.be/WnE9n4ntPHA?si=TiHqfx_Nw_0wJCsJ'"><span>3.2 Ütközés (Collide)</span></button></div>
             </div>
             <div class="col-sm-12 col-md-4 column3">
-                <div class="p-5 ms-3 me-3 mt-3 cards" style=" border-radius: 2vh;"><p style="text-align: center; color: #483c6c; font-weight: bold">Sulipy</p><br><iframe class="center img-fluid img-thumbnail rounded mx-auto d-block sulipyimg" style="width: 100%; height: 17rem" src="https://www.youtube.com/embed/D2nf-EBVIKU?si=n3PAeEhgeNUYhZ4x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><button class="buttoncenter custom-btn btn-5" style="color: white;" onclick="location.href='https://youtu.be/D2nf-EBVIKU?si=16pY-EmWQZnpYn4g'"><span>3.3 Irányítás egérrel</span></button></div>
+                <div class="p-5 ms-3 me-3 mt-3 cards" style=" border-radius: 2vh;"><p style="text-align: center; color: #483c6c; font-weight: bold">Sulipy</p><br><iframe class="center img-fluid img-thumbnail rounded mx-auto d-block sulipyimg" style="width: 100%; height: 100%" src="https://www.youtube.com/embed/D2nf-EBVIKU?si=n3PAeEhgeNUYhZ4x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><button class="buttoncenter custom-btn btn-5" style="color: white;" onclick="location.href='https://youtu.be/D2nf-EBVIKU?si=16pY-EmWQZnpYn4g'"><span>3.3 Irányítás egérrel</span></button></div>
             </div>
         </div>
     </div>
